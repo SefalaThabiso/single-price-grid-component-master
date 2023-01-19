@@ -9,8 +9,9 @@
 
   /* Neutral */
 
-  --clr-neutral-100: hsl(204, 43%, 93%);
-  --clr-neutral-200: hsl(218, 22%, 67%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(204, 43%, 93%);
+  --clr-neutral-300: hsl(218, 22%, 67%);
 
   /* font size */
   --fs-main: 16px;
@@ -28,7 +29,8 @@ main {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 4rem 1rem;
+  background-color: var(--clr-neutral-200);
+  min-height: 100vh;
 }
 
 .boxes {
@@ -51,13 +53,13 @@ main {
   color: var(--clr-primary-200);
 }
 
-.box1 h3 {
+.box1 .money-back {
   color: var(--Clr-primary-100);
   line-height: 1.2;
 }
 
 .box1 p {
-  color: var(--clr-neutral-200);
+  color: var(--clr-neutral-300);
 }
 
 .box2 {
@@ -79,13 +81,16 @@ main {
   font-size: 2rem;
 }
 
-.box2 button {
+.box2 .button {
   background-color: var(--Clr-primary-100);
   color: var(--clr-neutral-100);
   border: none;
   padding: 10px;
   border-radius: 4px;
   font-weight: var(--fw-bold);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .box3 {
